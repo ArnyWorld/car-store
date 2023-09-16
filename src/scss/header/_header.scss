@@ -1,0 +1,349 @@
+@use '../base/globales';
+@use '../base/colores' as colors;
+@use '../base/mixin' as mixin;
+@use '../base/variables' as var;
+
+.header{
+    width: 100%;
+    min-height:80vh ;
+    position: relative;
+}
+
+.headerAbout{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.headerShop {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+    margin-bottom: 2em;
+}
+
+.headerHome {
+    // background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerHome.jpg");
+    // background-size: cover;
+    // background-position: center;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    video{
+        width: auto;
+        display: block;
+        object-position: center;
+        
+    }
+    .textHeader {
+        z-index: 100;
+        max-width: 650px;
+        min-width: 200px;
+        height: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin-bottom: 150px;
+        @include mixin.litle{
+            margin-bottom: 50px;
+        }
+    }
+    .textHeader__title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+        color: #f6f8fc;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      
+  }
+
+.buttons__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .buttons__btnPrimary {
+        background-color: #ff3737;
+        color: #f6f8fc;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        padding: 0.7em 1.7em;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        cursor: pointer;
+      }
+      .buttons__btnSecondary {
+        background-color: #343a40;
+        color: #f6f8fc;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        padding: 0.7em 1.7em;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        cursor: pointer;
+      }
+}
+
+.headerListing{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+
+    margin-bottom: 2em;    
+}
+
+.headerBlog{
+    @include mixin.background('../img/headerBlog.jpg');
+    height: 85vh;
+    margin-bottom: 2em;
+}
+.headerContact{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/headerPorshe.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    margin-bottom: 2em;
+}
+
+.bodyShopping{
+    @include mixin.background('../img/background.jpg');    
+    min-height:100vh;
+    margin-bottom: 0;
+    background-attachment: fixed;
+}
+
+.menuMovil{
+    width: 75%;
+    background-color: #01020C;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    padding: 1.5em;
+    transition: transform .5s ease;
+    transform: translateX(-100%);
+    
+    &__logo{
+        width: 60%;
+        margin-bottom: 1em;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: column;
+
+        .navigationList{
+            margin-bottom: 1em;
+            .navigationLink{
+                @include mixin.text(var.$tipografia1, 1rem, colors.$color3);                
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 0%;
+                    height: 2px;
+                    background-color: colors.$color1;
+                    position: absolute;
+                    bottom: -4px;
+                    transition: width .5s ease-in;
+                }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+    &__icon{
+        color: colors.$color3;
+        font-size: 1.7rem;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        transition: transform .5s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+}
+
+.bar__navigation{
+    padding: 1.5em;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__label{
+            cursor: pointer;
+            color: colors.$color3;
+            z-index: 100;
+            font-size: 2.2rem;
+            display: none;
+            @include mixin.medium{
+                order: 1;
+                display: flex;
+            }
+        }
+        &__logo{
+            width: 15%;
+            @include mixin.medium{
+                order: 2;
+                width: 25%;
+            }
+            @include mixin.litle{
+                width: 35%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        &__menu{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 100;
+            @include mixin.medium{
+                display: none
+            }
+            .navigationList{
+                .navigationLink{
+                    @include mixin.text(var.$tipografia1, 1rem, colors.$color3);
+                    
+                }
+            }
+        }
+        &__car{
+            @include mixin.medium{
+                order: 3;
+                
+            }
+            // &:hover{
+            //     transform: scale(1.1);
+            // }
+            // &:hover~.products{
+            //     display: block;
+            // }
+            .submenu{
+
+                &:hover{
+                    .products{
+                        display: block;
+                        position: absolute;
+                        z-index: 100;
+                        top: 75%;
+                        right: 50px;
+                        width: 25rem;
+                        background-color: rgba(255,255,255,1);
+                        padding: 1em;
+                        box-sizing: border-box;
+
+                        @include mixin.litle{
+                            right: 18px;
+                            width: 90%;
+                        }
+
+                        &__table{
+                        
+                            width: 100%;
+                            padding: 1em;
+                            margin-bottom: 1em;
+
+                            .title{
+                                @include mixin.title(var.$tipografia1,1rem, colors.$color1);
+                                
+                            }
+
+                            thead{
+                                tr{
+                                    th{
+                                        @include mixin.title(var.$tipografia1, 1rem, colors.$color4);
+                                        margin-bottom: 0;
+                                        padding: 0.5em
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    td{
+                                        text-align: center;
+                                        color: colors.$color4;
+                                        font-family: var.$tipografia2;
+                                    }
+                                    .delete-p{
+                                        display: flex;
+                                        align-items: center;
+                                        color: colors.$color1;
+                                        font-size: 1.2rem;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                        &__total{
+                            @include mixin.text(var.$tipografia1, 1.7rem, colors.$color1, right);
+                        }
+                        &__clear{
+                            // width: 100%;
+                            // border: 1px solid colors.$color1;
+                            // background-color: transparent;
+                            // border-radius: 4px;
+                            // padding: 0.5em 0;
+                            // color: colors.$color1;
+                            @include mixin.button(transparent,colors.$color1,1px solid colors.$color1);
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .icon{
+                    color: colors.$color3;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    transition: transform .5s;
+                    padding: 0.7em;
+                    @include mixin.medium{
+                        font-size: 1.5rem;
+                    }
+                    
+                    &:hover+.products{
+                        display: block;
+                    }
+                }
+
+                .products{
+                    display: none;
+                }
+            }
+        } 
+    }
+}

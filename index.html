@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarStore</title>
+    <link rel="stylesheet" href="./build/css/lightbox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./build/css/styles.css" />
+  </head>
+  <body>
+    <header class="header headerHome">
+      <video class="header__video" autoplay muted loop>
+        <source src="./build/video/videoHeader.mp4" />
+      </video>
+      <div class="textHeader">
+        <h1 class="textHeader__title">
+          You find the best cars in carstore. Take advantage of the precious
+          basses.
+        </h1>
+        <div class="buttons__container">
+          <a class="buttons__btnPrimary" href="#newCars">New Cars</a>
+          <a class="buttons__btnSecondary" href="shop.html">See Shop</a>
+        </div>
+      </div>
+    </header>
+    <div class="menuMovil">
+      <div class="menuMovil__logo">
+        <a href="index.html">
+          <img src="./build/img/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <ul class="menuMovil__menu">
+        <li class="navigationList">
+          <a href="index.html" class="navigationLink">Home</a>
+        </li>
+        <li class="navigationList">
+          <a href="about.html" class="navigationLink">About Us</a>
+        </li>
+        <li class="navigationList">
+          <a href="carsListing.html" class="navigationLink">Cars Listing</a>
+        </li>
+        <li class="navigationList">
+          <a href="shop.html" class="navigationLink">Shop</a>
+        </li>
+        <li class="navigationList">
+          <a href="blog.html" class="navigationLink">Blog</a>
+        </li>
+        <li class="navigationList">
+          <a href="contact.html" class="navigationLink">Contacts</a>
+        </li>
+      </ul>
+      <i class="menuMovil__icon fa-solid fa-circle-xmark"></i>
+    </div>
+    <nav class="bar__navigation">
+      <div class="container navigation">
+        <i class="navigation__label fa-solid fa-bars"></i>
+        <div class="navigation__logo">
+          <a href="index.html">
+            <img src="./build/img/logo.png" alt="Logo" />
+          </a>
+        </div>
+
+        <ul class="navigation__menu">
+          <li class="navigationList">
+            <a href="index.html" class="navigationLink">Home</a>
+          </li>
+          <li class="navigationList">
+            <a href="about.html" class="navigationLink">About Us</a>
+          </li>
+          <li class="navigationList">
+            <a href="carsListing.html" class="navigationLink">Cars Listing</a>
+          </li>
+          <li class="navigationList">
+            <a href="shop.html" class="navigationLink">Shop</a>
+          </li>
+          <li class="navigationList">
+            <a href="blog.html" class="navigationLink">Blog</a>
+          </li>
+          <li class="navigationList">
+            <a href="contact.html" class="navigationLink">Contacts</a>
+          </li>
+        </ul>
+        <ul class="navigation__car">
+          <li class="submenu">
+            <a href="carShopping.html" class="">
+              <i class="icon fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <div class="products">
+              <table class="products__table">
+                <caption class="title">
+                  Productos
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <p class="products__total"></p>
+              <button class="products__clear">Vaciar Carrito</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="marksCars">
+      <div class="container">
+        <div class="marks">
+          <div class="textMark">
+            <small>new 2022</small>
+            <h2>Cars</h2>
+          </div>
+          <div class="iconMarks">
+            <i class="fas fa-car"></i>
+            <i class="fas fa-truck"></i>
+            <i class="fas fa-motorcycle"></i>
+            <i class="fas fa-truck-pickup"></i>
+            <i class="fas fa-truck-moving"></i>
+            <i class="fas fa-taxi"></i>
+            <i class="fas fa-car-side"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="leadBackground">
+      <div class="container">
+        <div class="icons">
+          <div class="icons__container">
+            <i class="fas fa-medal icons__icon"></i>
+            <div class="icons__content">
+              <h3 class="icons__title">Number 1</h3>
+              <p class="icons__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                ipsa, ullam suscipit, impedit dolore tenetur asperiores rem
+                aspernatur ad incidunt consectetur dolorum. Molestiae quasi,
+                deserunt asperiores voluptatibus tenetur culpa nam?
+              </p>
+            </div>
+          </div>
+          <div class="icons__container">
+            <i class="fas fa-users icons__icon"></i>
+            <div class="icons__content">
+              <h3 class="icons__title">Family</h3>
+              <p class="icons__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                ipsa, ullam suscipit, impedit dolore tenetur asperiores rem
+                aspernatur ad incidunt consectetur dolorum. Molestiae quasi,
+                deserunt asperiores voluptatibus tenetur culpa nam?
+              </p>
+            </div>
+          </div>
+          <div class="icons__container">
+            <i class="fas fa-hand-holding-usd icons__icon"></i>
+            <div class="icons__content">
+              <h3 class="icons__title">Economic</h3>
+              <p class="icons__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                ipsa, ullam suscipit, impedit dolore tenetur asperiores rem
+                aspernatur ad incidunt consectetur dolorum. Molestiae quasi,
+                deserunt asperiores voluptatibus tenetur culpa nam?
+              </p>
+            </div>
+          </div>
+          <div class="icons__container">
+            <i class="fas fa-tools icons__icon"></i>
+            <div class="icons__content">
+              <h3 class="icons__title">Support</h3>
+              <p class="icons__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                ipsa, ullam suscipit, impedit dolore tenetur asperiores rem
+                aspernatur ad incidunt consectetur dolorum. Molestiae quasi,
+                deserunt asperiores voluptatibus tenetur culpa nam?
+              </p>
+            </div>
+          </div>
+          <div class="icons__container">
+            <i class="far fa-comments icons__icon"></i>
+            <div class="icons__content">
+              <h3 class="icons__title">Personalized attention</h3>
+              <p class="icons__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                ipsa, ullam suscipit, impedit dolore tenetur asperiores rem
+                aspernatur ad incidunt consectetur dolorum. Molestiae quasi,
+                deserunt asperiores voluptatibus tenetur culpa nam?
+              </p>
+            </div>
+          </div>
+          <div class="icons__container">
+            <i class="far fa-handshake icons__icon"></i>
+            <div class="icons__content">
+              <h3 class="icons__title">Trust</h3>
+              <p class="icons__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                ipsa, ullam suscipit, impedit dolore tenetur asperiores rem
+                aspernatur ad incidunt consectetur dolorum. Molestiae quasi,
+                deserunt asperiores voluptatibus tenetur culpa nam?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="newCars" id="newCars">
+        <div class="newCars__header">
+          <h2 class="newCars__title">New Cars</h2>
+          <p class="newCars__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus,
+            assumenda!
+          </p>
+        </div>
+        <div class="newCars__images">
+          <a
+            data-lightbox="mygallery"
+            class="newCars__data"
+            data-title="Car 1"
+            href="./build/img/grid_car1.jpg"
+            ><img
+              src="./build/img/grid_car1.jpg"
+              class="newCars__image"
+              alt="auto1"
+          /></a>
+          <a
+            data-lightbox="mygallery"
+            class="newCars__data"
+            data-title="Car 2"
+            href="./build/img/car1.jpg"
+            ><img src="./build/img/car1.jpg" class="newCars__image" alt="auto1"
+          /></a>
+          <a
+            data-lightbox="mygallery"
+            class="newCars__data"
+            data-title="Car 3"
+            href="./build/img/grid_car4.jpg"
+            ><img
+              src="./build/img/grid_car4.jpg"
+              class="newCars__image"
+              alt="auto1"
+          /></a>
+          <a
+            data-lightbox="mygallery"
+            class="newCars__data"
+            data-title="Car 4"
+            href="./build/img/grid_car7.jpg"
+            ><img
+              src="./build/img/grid_car7.jpg"
+              class="newCars__image"
+              alt="auto1"
+          /></a>
+          <a
+            data-lightbox="mygallery"
+            class="newCars__data"
+            data-title="Car 2"
+            href="./build/img/car2.jpg"
+            ><img src="./build/img/car2.jpg" class="newCars__image" alt="auto2"
+          /></a>
+          <a
+            data-lightbox="mygallery"
+            class="newCars__data"
+            data-title="Car 3"
+            href="./build/img/car3.jpg"
+            ><img src="./build/img/car3.jpg" class="newCars__image" alt="auto3"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax">
+      <div class="container">
+        <div class="contentParallax">
+          <div class="contentParallax__left">
+            <small class="contentParallax__small">Lorem ipsum dolor sit.</small>
+            <h3 class="contentParallax__title">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
+              aliquam eius architecto, hic consectetur repellat.
+            </h3>
+            <img
+              src="./build/img/parallax__image-min.jpg"
+              class="contentParallax__image"
+              alt="parallax"
+            />
+          </div>
+          <div class="contentParallax__right">
+            <div class="step">
+              <div class="step__title">
+                <span>1</span>
+                <h4>Lorem ipsum dolor sit.</h4>
+              </div>
+              <div class="step__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis adipisci ipsa voluptatem perferendis cum. Temporibus
+                  recusandae nesciunt esse obcaecati culpa, ut natus et delectus
+                  sapiente repellat tempora nemo dolor autem.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">
+                <span>2</span>
+                <h4>Lorem ipsum dolor sit.</h4>
+              </div>
+              <div class="step__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis adipisci ipsa voluptatem perferendis cum. Temporibus
+                  recusandae nesciunt esse obcaecati culpa, ut natus et delectus
+                  sapiente repellat tempora nemo dolor autem.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__title">
+                <span>3</span>
+                <h4>Lorem ipsum dolor sit.</h4>
+              </div>
+              <div class="step__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis adipisci ipsa voluptatem perferendis cum. Temporibus
+                  recusandae nesciunt esse obcaecati culpa, ut natus et delectus
+                  sapiente repellat tempora nemo dolor autem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="leadBackground">
+      <div class="container">
+        <div class="testimonials">
+          <h2 class="testimonials__title">Testimonials</h2>
+          <p class="testimonials__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero animi
+            quo culpa? Qui, maiores obcaecati!
+          </p>
+        </div>
+        <div class="peopleCards">
+          <div class="peopleCard">
+            <img
+              src="./build/img/dev1-min.jpg"
+              class="peopleCard__image"
+              alt=""
+            />
+            <div class="peopleCard__content">
+              <h3 class="peopleCard__title">Bessie Cooper</h3>
+              <p class="peopleCard__description">
+                Lorem ipsum dolor sit amet consectetur velit officia quae odio
+                laboriosam! Commodi sed in distinctio perspiciatis.
+              </p>
+            </div>
+          </div>
+          <div class="peopleCard">
+            <img
+              src="./build/img/dev2-min.jpg"
+              class="peopleCard__image"
+              alt=""
+            />
+            <div class="peopleCard__content">
+              <h3 class="peopleCard__title">Wade Warren</h3>
+              <p class="peopleCard__description">
+                Lorem ipsum dolor sit amet consectetur velit officia quae odio
+                laboriosam! Commodi sed in distinctio perspiciatis.
+              </p>
+            </div>
+          </div>
+          <div class="peopleCard">
+            <img
+              src="./build/img/dev4-min.jpg"
+              class="peopleCard__image"
+              alt=""
+            />
+            <div class="peopleCard__content">
+              <h3 class="peopleCard__title">Theresa Webb</h3>
+              <p class="peopleCard__description">
+                Lorem ipsum dolor sit amet consectetur velit officia quae odio
+                laboriosam! Commodi sed in distinctio perspiciatis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscriptionContainer">
+      <div class="container">
+        <div class="subscription">
+          <h2 class="subscription__title">Subscribe to our news & offer</h2>
+          <div class="formSubscription">
+            <form autocomplete="off" class="form">
+              <input
+                type="email"
+                class="form__email"
+                name="email"
+                placeholder="enter your email here"
+              />
+              <input type="submit" class="form__submit" value="Subscribe" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container detailsFooter">
+        <div class="detailsFooter__about">
+          <h4 class="title">About Us</h4>
+          <p class="text">
+            Address: 2972 WWestheimer Rd. Santa Ana Illinois 85486
+          </p>
+          <p class="text">Phone: (217) 55-0113</p>
+          <p class="text">E-mail: carStore@example.com</p>
+          <div class="networks">
+            <i class="icon fa-brands fa-youtube"></i>
+            <i class="icon fa-brands fa-facebook-f"></i>
+            <i class="icon fa-brands fa-twitter"></i>
+            <i class="icon fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <ul class="detailsFooter__menu">
+          <li class="navigationList">
+            <a href="index.html" class="navigationLink">Home</a>
+          </li>
+          <li class="navigationList">
+            <a href="about.html" class="navigationLink">About Us</a>
+          </li>
+          <li class="navigationList">
+            <a href="carsListing.html" class="navigationLink">Cars Listing</a>
+          </li>
+          <li class="navigationList">
+            <a href="shop.html" class="navigationLink">Shop</a>
+          </li>
+          <li class="navigationList">
+            <a href="blog.html" class="navigationLink">Blog</a>
+          </li>
+          <li class="navigationList">
+            <a href="contact.html" class="navigationLink">Contacts</a>
+          </li>
+        </ul>
+
+        <div class="detailsFooter__form">
+          <h3 class="title">Question</h3>
+          <form class="form" autocomplete="off">
+            <input type="text" class="input" name="name" placeholder="Name*" />
+            <input
+              type="number"
+              class="input"
+              name="phone"
+              placeholder="Phone*"
+            />
+            <label for="message" class="label">Message*</label>
+            <textarea
+              name="message"
+              class="message"
+              id="message"
+              cols="30"
+              rows="5"
+            ></textarea>
+            <input class="button" type="submit" value="send" />
+          </form>
+        </div>
+      </div>
+      <p class="copy">&copy;copyright carStore-<span></span></p>
+    </footer>
+    <i class="goTop fa-solid fa-circle-chevron-up"></i>
+    <script src="./build/js/lightbox-plus-jquery.min.js"></script>
+    <script src="./build/js/generales.js"></script>
+    <script src="./build/js/index.js"></script>
+  </body>
+</html>
